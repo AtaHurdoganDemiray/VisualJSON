@@ -13,7 +13,7 @@ public:
 	static MilString MilPathStringFunctions::GetFileExtension(MilString filename);
 	static MilString MilPathStringFunctions::GetJustFileName(const MilString & fullfilepath);
 	static bool MilPathStringFunctions::DetectPlaces(const MilString &str, int bi, int ei, std::map<char, std::vector<int>>&charPlaceIndexMap);
-	static std::vector<MilString> MilPathStringFunctions::ParseSolidCncCommandLine();
+	static std::vector<MilString> ParseVJSONCommandLine();
 	static MilString MilPathStringFunctions::GetVJSONExeFolder();
 	static MilString MilPathStringFunctions::GetSubSet(const MilString &str, int bi, int ei);
 
