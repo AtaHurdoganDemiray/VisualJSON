@@ -1,0 +1,10 @@
+{
+	"General":
+	{
+		"DefaultEditorExePath":"C:\\Windows\\Notepad.exe"
+	},
+	"AutomatedTestParameters":	
+	{
+		"TestBaseFolder" : "C:\\Test\\"
+	}
+}
