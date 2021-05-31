@@ -130,7 +130,7 @@ bool MilPathStringFunctions::DetectPlaces(const MilString &str, int bi, int ei, 
 		throw exception("MilPathStringFunctions::DetectPlaces");
 	}
 }
-std::vector<MilString> MilPathStringFunctions::ParseSolidCncCommandLine()
+std::vector<MilString> MilPathStringFunctions::ParseVJSONCommandLine()
 {
 	std::vector<MilString> parsedsolidcnccmdline;
 	MilString solidcnccmdline = GetCommandLine();
@@ -153,7 +153,7 @@ std::vector<MilString> MilPathStringFunctions::ParseSolidCncCommandLine()
 
 MilString MilPathStringFunctions::GetVJSONExeFolder()
 {
-	std::vector<MilString> parsedsolidcnccmdline = ParseSolidCncCommandLine();
+	std::vector<MilString> parsedsolidcnccmdline = ParseVJSONCommandLine();
 	if (parsedsolidcnccmdline.size())
 	{
 		MilString fname = parsedsolidcnccmdline.front();
